@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="CSS/newcss.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#home" class="w3-bar-item w3-button w3-padding-large">Sākums</a>
+    
+     <div class="w3-dropdown-hover">
+      <a href="#gimp" class="w3-button w3-padding-large">Attēlu apstrāde</a>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#rast" class="w3-bar-item w3-button">Rastgrafika</a>
+        <a href="#vektor" class="w3-bar-item w3-button">Vektorgrafika</a>
+      </div>
+     </div>
+    
+    
+    <a href="#cad" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Tinkercad</a>
+    <a href="#word" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Teksta apstrāde</a>
+     <a href="#video" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Video</a>
+      <a href="#excel" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Izklājlapas</a>
+       <a href="http://localhost:8383/HTML5Application2/newhtml.html#tema" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Individuālā tēma</a>
+       
+   
+    
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#gimp" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Attēlu apstrāde</a>
+  <a href="#cad" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TINKERCAD</a>
+  <a href="#word" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Teksta apstrāde</a>
+  <a href="#video" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">VIDEO</a>
+   <a href="#excel" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Izklājlapas</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+
+  <!-- The Home Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="home">
+    <h2 class="w3-wide">MANS PORTFOLIO</h2>
+    <p class="w3-opacity"><i>We love IT</i></p>
+     <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+    <p class="w3-justify" style="text-indent: 30px;">Datorikas stundās esmu apguvis dažādas tehnoloģijas un programmas, kas palīdz man attīstīt gan radošās, gan analītiskās prasmes. 
+        Esmu apguvis GIMP un Inscape attēlu rediģēšanu, kas ļauj man veidot profesionālus vizuālos materiālus, kā arī Word dokumentu sagatavošanu, lai nodrošinātu augstu kvalitāti rakstveida darbos. Excel izmantoju datu analīzei un aprēķinu veikšanai, nodrošinot precīzus rezultātus dažādos projektos. 
+        Tāpat esmu guvis pieredzi video montāžā, radot kvalitatīvus video materiālus, un izmantoju Tinkercad dizainēšanas rīkus 3D modeļu veidošanai. Šie sasniegumi 
+        tiek ilustrēti ar attēliem, video un citiem pierādījumiem, kas atspoguļo manu progresu un padziļināto izpratni par tehnoloģijām.</p>
+     <div class="w3-row w3-padding-32">
+   
+  
+        <img src="images/me.png" alt="Apaļš attēls" 
+             style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; display: block; margin: 20px auto;">
+    </div>
+    </div>
+  </div>
+
+  <!-- The Gimp Section -->
+  <div class="w3-black" id="gimp">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">
+    <img src="images/gimp.png" alt="Word Logo" style="width:30px; vertical-align: middle; margin-right: 10px;">
+   Attēlu apstrāde
+    <img src="images/gimp.png" alt="Word Logo" style="width:30px; vertical-align: middle; margin-left: 10px;">
+</h2>
+      <p class="w3-opacity w3-center"><i>No parasta attēla līdz meistardarbam – rediģē gudri!</i></p><br>
+      
+      
+      
+      
+      <div style="display: flex; align-items: center; justify-content: center; gap: 30px;">
+  
+    <img src="images/inscape.gif" alt="Attēls 1" 
+            onclick="openModal(this)" 
+            style="width: 400px; height: auto; cursor: pointer; transition: transform 0.3s ease;"
+            onmouseover="this.style.transform='scale(1.05)'" 
+            onmouseout="this.style.transform='scale(1)'">
+  
+  
+  
+   <img src="images/gimp5.png" alt="Attēls 1" 
+            onclick="openModal(this)" 
+            style="width: 400px; height: auto; cursor: pointer; transition: transform 0.3s ease;"
+            onmouseover="this.style.transform='scale(1.05)'" 
+            onmouseout="this.style.transform='scale(1)'">
+</div>
+      <p class="w3-justify" style="text-indent: 30px;">Mācoties attēlu rediģēšanu, es apguvu, kā uzlabot attēlu kvalitāti, pielāgot krāsas, kontrastu un asumu, kā arī noņemt nevēlamus elementus. 
+          Izmantojot dažādus rīkus, es varēju pielabot fotogrāfijas, pievienot tekstus un efektus, kā arī kombinēt vairākus attēlus vienā kompozīcijā. 
+          Šīs prasmes ir ļoti noderīgas, lai veidotu vizuāli pievilcīgus un profesionālus attēlus. </p>
+      
+     
+
+     
+      
+        </div>
+      </div>
+  
+    <!-- The Rastgrafika Section -->
+  <div class="w3-black" id="rast">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Rastgrafika</h2>
+      <p class="w3-opacity w3-center"><i>Detalizēti attēli, kas runā paši par sevi!</i></p><br>
+
+   <p class="w3-justify" style="text-indent: 30px;">   Mācoties rastrgrafiku GIMP programmā, es apguvu, kā strādāt ar pikseļiem balstītiem attēliem. 
+      Es iemācījos izmantot dažādus rīkus, piemēram, otiņas, dzēšgumiju, atlases un slāņus, lai veidotu un rediģētu attēlus. Strādājot ar GIMP, 
+      es izveidoju dažādus vizuālus darbus, tostarp zīmēju sniegavīru un veidoju GIF animācijas. 
+      Šis process palīdzēja saprast, kā attēla kvalitāte mainās, to palielinot vai samazinot, un kā efektīvi izmantot krāsas un filtrus, lai iegūtu interesantu rezultātu.</p>
+   
+    <div style="display: flex; justify-content: center; gap: 20px; text-align: center;">
+  <div>
+   
+     <img src="images/gg2.gif" alt="Attēls 1" 
+            onclick="openModal(this)" 
+            style="width: 500px; height: auto; cursor: pointer; transition: transform 0.3s ease;"
+            onmouseover="this.style.transform='scale(1.05)'" 
+            onmouseout="this.style.transform='scale(1)'">
+  </div>
+      
+  <div>
+   
+     <img src="images/baners.gif" alt="Attēls 1" 
+            onclick="openModal(this)" 
+            style="width: 500px; height: auto; cursor: pointer; transition: transform 0.3s ease;"
+            onmouseover="this.style.transform='scale(1.05)'" 
+            onmouseout="this.style.transform='scale(1)'">
+  </div>
+</div>
+     <p style="text-align: center;"> Divi dažādi gif animācijas par vienu tēmu</p>
+     
+     
+     
+    
+        </div>
+      </div>
+    
+    <!-- The Vektorgrafika Section -->
+  <div class="w3-black" id="vektor">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Vektorgrafika</h2>
+      <p class="w3-opacity w3-center"><i>Bezgalīgas iespējas, perfekta kvalitāte jebkurā izmērā!</i></p><br>
+      <p class="w3-justify" style="text-indent: 30px;">
+          
+          Inkscape programmā es mācījos vektorgrafiku, kas atšķirībā no rastrgrafikas balstās uz līknēm un formām, nevis pikseļiem.
+          Es apguvu, kā veidot precīzus un skalējamus attēlus, izmantojot līnijas, figūras, kontūras un mezglus. 
+          Inkscape ļauj izveidot augstas kvalitātes grafikas, kuras var bez kvalitātes zuduma palielināt un samazināt.
+          Šīs zināšanas man palīdzēja labāk izprast logo, ikonu un ilustrāciju veidošanas principus.
+      </p>
+       <img src="images/logo.png" alt="Pirmais attēls" width="200" style="display: block; margin: auto;">
+        <p style="text-align: center;"> Logo, kuru es uzzīmēju Inscape progrāmmā priekš 3D klucīša dizainam</p>
+        
+        
+        
+    
+        </div>
+      </div>
+
+  
+
+  <!-- The Tinkercad Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="cad">
+  <h2 class="w3-wide w3-center">
+    <img src="images/cad.jpg" alt="Word Logo" style="width:30px; vertical-align: middle; margin-right: 10px;">
+    TINKERCAD
+    <img src="images/cad.jpg" alt="Word Logo" style="width:30px; vertical-align: middle; margin-left: 10px;">
+</h2>
+    <p class="w3-opacity w3-center"><i>Tinkercad – no idejas līdz realitātei 3D pasaulē!</i></p>
+    
+    <p class="w3-justify" style="text-indent: 30px;"> Strādājot grupās, mēs veidojām 3D klucīšus, izmantojot Tinkercad. Klucīša dizainu mums izveidoja cita grupa, tomēr mēs paši izvēlējāmies tā izmērus un sagatavojām failu 3D drukai. 
+    Procesa laikā mēs rūpīgi pārbaudījām, vai dizains atbilst tehniskajām prasībām, lai klucītis būtu precīzs un kvalitatīvs.
+
+Pēc tam mēs izdrukājām klucīti ar 3D printeri, sekojot līdzi drukāšanas procesam, lai nodrošinātu labu rezultātu.
+Kad klucītis bija gatavs, mēs to salikām kopā. Šis uzdevums palīdzēja mums labāk saprast 3D modelēšanas un drukāšanas procesu, 
+kā arī attīstīja komandas darbu un precizitāti. </p> 
+    <div class="w3-row w3-padding-32">
+        
+       <div style="display: flex; justify-content: center; gap: 20px; text-align: center;">
+         <video width="640" height="360" controls style="display: block; margin: auto;">
+  <source src="video/cad1.mp4" type="video/mp4">
+  
+</video>
+         <video width="640" height="360" controls style="display: block; margin: auto;">
+  <source src="video/cad2.mp4" type="video/mp4">
+  
+</video>
+       </div>
+    </div>
+  </div>
+  
+  <!-- The Word Section -->
+   <div class="w3-black" id="word">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">
+    <img src="images/word.png" alt="Word Logo" style="width:30px; vertical-align: middle; margin-right: 10px;">
+    WORD
+    <img src="images/word.png" alt="Word Logo" style="width:30px; vertical-align: middle; margin-left: 10px;">
+</h2>
+     <p class="w3-opacity w3-center"><i>Word – no teksta līdz perfektiem dokumentiem!</i></p>
+    <p class="w3-justify" style="text-indent: 30px;">Microsoft Word apguves laikā mēs mācījāmies izmantot dažādus rīkus, kas palīdz veidot un formatēt dokumentus. 
+        Apguvām, kā pareizi formatēt tekstu, mainīt fontus, ievietot attēlus, tabulas un citus elementus, lai dokumenti izskatītos sakārtoti un profesionāli. 
+        Viens no svarīgākajiem uzdevumiem bija satura rādītāja izveide, kur iemācījāmies izmantot virsrakstu stilus un automātisko satura rādītāja ģenerēšanu.
+    Mācoties Microsoft Word, mēs apguvām arī Mailings jeb pasta sūtījumu funkciju, kas ļauj automatizēt personalizētu dokumentu izveidi. Mēs iemācījāmies, kā izveidot apvienotos pasta sūtījumus, izmantojot datu avotus, piemēram, 
+    Excel tabulas, lai masveidā ģenerētu personalizētus vēstules, aploksnes un etiķetes. 
+    Šīs zināšanas palīdz labāk organizēt un prezentēt informāciju, padarot dokumentu veidošanu ātrāku un efektīvāku.
+    </p>
+    
+    
+    <div class="w3-row w3-padding-32">
+     
+    </div>
+     <div style="display: flex; justify-content: center; gap: 20px; text-align: center;">
+  <div>
+  
+      <img src="images/word1.png" alt="Attēls 1" 
+            onclick="openModal(this)" 
+            style="width: 300px; height: auto; cursor: pointer; transition: transform 0.3s ease;"
+            onmouseover="this.style.transform='scale(1.05)'" 
+            onmouseout="this.style.transform='scale(1)'">
+  </div>
+  <div>
+  
+      <img src="images/word2.png" alt="Attēls 1" 
+            onclick="openModal(this)" 
+            style="width: 700px; height: auto; cursor: pointer; transition: transform 0.3s ease;"
+            onmouseover="this.style.transform='scale(1.05)'" 
+            onmouseout="this.style.transform='scale(1)'">
+  </div>
+</div>
+     <p style="text-align: center;"> Kontroldarba uzdevumi par satura rādītāju un pasta sūtījumu funkciju (Mailings) </p>
+     
+     
+     
+    
+  </div>
+       </div>
+  
+   <!-- The Video Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="video">
+    <h2 class="w3-wide w3-center">
+    <img src="images/video1.png" alt="Word Logo" style="width:30px; vertical-align: middle; margin-right: 10px;">
+    VIDEO
+    <img src="images/video1.png" alt="Word Logo" style="width:30px; vertical-align: middle; margin-left: 10px;">
+</h2>
+    <p class="w3-opacity w3-center"><i>Video – tavi projekti dzīvo kustībā!</i></p>
+    
+    <p class="w3-justify" style="text-indent: 30px;"> 
+    Veidojot projektu par 3D klucīša izveidi, mēs izmantojām Kdenlive video rediģēšanas programmu, lai dokumentētu un prezentētu visu procesu. 
+    Pirmkārt, mēs filmējām materiālu, uzņemot video kadrus, kuros bija redzama katra projekta posma izpilde – sākot no 3D modelēšanas Tinkercad vidē līdz pat klucīša izdrukāšanai un konstrukcijas salikšanai.
+Pēc tam izmantojām Kdenlive, lai apstrādātu un saskaņotu video kadrus, pievienotu tekstu, mūziku un pārējos efektus, kas palīdzētu padarīt video interesantu un informatīvu. 
+Šis process ne tikai ļāva iegūt praktiskas iemaņas video montāžā, bet arī palīdzēja labāk saprast, kā strukturēt un prezentēt projektu.
+    </p>
+    <div class="w3-row w3-padding-32">
+        
+        <a href="https://eduriga-my.sharepoint.com/:v:/g/personal/iignatenko2_edu_riga_lv/EWGiL09Qha9ChNohmJTOIlgBhYisy6UQOCETztUiNvMbTg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=BsKAVu">
+            
+            Saite uz video
+        </a>
+      
+    </div>
+  </div>
+   
+   
+  <!-- The Excel Section -->
+  <div class="w3-black" id="excel">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+     <h2 class="w3-wide w3-center">
+    <img src="images/excel.png" alt="Word Logo" style="width:30px; vertical-align: middle; margin-right: 10px;">
+    EXCEL
+    <img src="images/excel.png" alt="Word Logo" style="width:30px; vertical-align: middle; margin-left: 10px;">
+</h2>
+      <p class="w3-opacity w3-center"><i>Excel – dati, kas runā paši par sevi!</i></p><br>
+      
+      
+    <p class="w3-justify" style="text-indent: 30px;">  Excel apguvu tikai skolā, kur iepazinos ar tā piedāvātajiem rīkiem un funkcijām.
+
+Sāku ar pamata rīkiem – tabulu veidošanu, datu sakārtošanu un filtrēšanu. Vēlāk mācījos izmantot formulas, kas palīdzēja veikt aprēķinus un analizēt datus. Diagrammu veidošana deva iespēju vizuāli attēlot informāciju, padarot to saprotamāku.
+
+Viena no svarīgākajām prasmēm bija darbs ar Pivot Table, kas atvieglo datu kopsavilkumu un analīzi. Apguvu arī nosacīto formatēšanu un citus rīkus, kas palīdzēja efektīvāk strādāt ar lieliem datu apjomiem.
+
+Excel man deva iespēju labāk strukturēt un analizēt datus, veikt precīzākus aprēķinus un atvieglot informācijas apstrādi. Tagad varu daudz ātrāk un efektīvāk organizēt darbu ar lieliem datu kopumiem.</p> 
+
+  <div style="display: flex; justify-content: center; gap: 30px; text-align: center;">
+  <div>
+     <img src="images/excel1.png" alt="Attēls 1" 
+            onclick="openModal(this)" 
+            style="width: 800px; height: auto; cursor: pointer; transition: transform 0.3s ease;"
+            onmouseover="this.style.transform='scale(1.05)'" 
+            onmouseout="this.style.transform='scale(1)'">
+    
+    
+     <p> Veidojām grafikus</p>
+  </div>
+  <div>
+     <img src="images/excel2.png" alt="Attēls 1" 
+            onclick="openModal(this)" 
+            style="width: 800px; height: auto; cursor: pointer; transition: transform 0.3s ease;"
+            onmouseover="this.style.transform='scale(1.05)'" 
+            onmouseout="this.style.transform='scale(1)'">
+     <p> Veidojam grafiku ar lineāro regresiju un korelācijas koeficientu </p>
+  </div>
+</div>
+    
+    
+    
+
+      
+        </div>
+      </div>
+  
+   <div id="imageModal" onclick="closeModal()" 
+        style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); justify-content: center; align-items: center;">
+        <img id="modalImage" src="" alt="Palielināts attēls" 
+            style="max-width: 90%; max-height: 90%;">
+
+     </div>
+<!-- End Page Content ->
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Lūdzu 10!!!!!!!</p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+ <script>
+        function openModal(image) {
+            document.getElementById("modalImage").src = image.src;
+            document.getElementById("imageModal").style.display = "flex";
+        }
+
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+    </script>
+    
+
+</body>
+</html>
